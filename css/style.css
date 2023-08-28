@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: blue;
+  color: white;
+  font-family: monospace;
+}
+
+h1 {
+  font-size: 3.5rem;
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  width: 1200px;
+  justify-content: center;
+  margin: auto;
+}
+
+#scene {
+  flex: 0 0 800px;
+  border: 5px dashed white;
+  padding: 1rem;
+  padding-right: 100px;
+}
+
+#scene > .track {
+  background-color: darkslategrey;
+  width: 700px;
+  min-height: 100px;
+  border-bottom: 15px dashed white;
+  margin-bottom: 1rem;
+  padding: 0.3rem;
+  font-size: 1rem;
+
+  position: relative;
+}
+
+#scene > .track > .car {
+  position: absolute;
+  bottom: 0;
+  height: 50px;
+
+  transition: left 0.1s linear;
+}
+
+#results {
+  flex: 0 0 400px;
+  padding: 0 1rem;
+  border-right: 5px dashed white;
+  border-bottom: 5px dashed white;
+  border-top: 5px dashed white;
+}
+
+#results > .result-block {
+  font-size: 1rem;
+  padding: 1rem 0;
+  border-bottom: 5px dashed white;
+}
+
+#results > .result-block:last-child {
+  border-bottom: none;
+}
+
+.play-container {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.play-container > .play {
+  font-family: inherit;
+  color: white;
+  border: 10px dashed currentColor;
+  background: transparent;
+  font-size: 3rem;
+  padding: 1rem 3rem;
+  cursor: pointer;
+  margin: 0 20px;
+}
+
+.play-container > .play:hover {
+  transform: scale(1.2);
+}
+
+.d-none {
+  display: none;
+}
