@@ -20,6 +20,26 @@ const players = [
     img: './img/car-4.png',
     position: 15,
   },
+  {
+    name: 'Yellow Truck',
+    img: './img/car-1.png',
+    position: 15,
+  },
+  {
+    name: 'Ape',
+    img: './img/car-2.png',
+    position: 15,
+  },
+  {
+    name: 'Family Car',
+    img: './img/car-3.png',
+    position: 15,
+  },
+  {
+    name: 'Cargo Truck',
+    img: './img/car-4.png',
+    position: 15,
+  },
 ];
 
 // ### ELEMENTI DI INTERESSE
